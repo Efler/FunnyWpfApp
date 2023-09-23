@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <Company>LupikiPupiki</Company>
+        <Product>Vkusnoteevo</Product>
+        <Description>UltraMegaPelmeni</Description>
+        <AssemblyTitle>UltraMegaPelmeni</AssemblyTitle>
+        <ApplicationIcon>src/icon.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="src\sound_village.wav" />
+      <None Remove="src\background.jpg" />
+      <Resource Include="src\background.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="src\background2.jpg" />
+      <Resource Include="src\background2.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="src\hrumkin_sound.wav" />
+      <Resource Include="src\hrumkin_sound.wav">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="src\icon.ico" />
+      <Resource Include="src\icon.ico">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+</Project>
